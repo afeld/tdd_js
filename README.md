@@ -7,9 +7,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 * Write a test framework
 * Stubbing/mocking
   * [Sinon.JS](http://sinonjs.org)
-* Best practices
-  * Breaking things into small pieces
-  * Avoiding state
 
 ## See also
 
