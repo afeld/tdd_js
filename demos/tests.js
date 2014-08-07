@@ -1,3 +1,9 @@
-QUnit.test( "hello test", function( assert ) {
-  assert.ok( 1 == "1", "Passed!" );
+var count = 10;
+function decrement(){
+  count -= 1;
+}
+
+QUnit.test("hello test", function(assert) {
+  decrement();
+  assert.equal(count, 9);
 });
