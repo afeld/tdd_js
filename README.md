@@ -4,9 +4,17 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 
 ## Outline
 
-* Write a test framework
-* Stubbing/mocking
-  * [Sinon.JS](http://sinonjs.org)
+* Basics of testing
+  * Structure
+    1. Setup
+    1. Action
+    1. Assertion
+  * Write a test framework
+* Demos
+  * Stubbing/mocking
+    * [Sinon.JS](http://sinonjs.org)
+  * Testing w/ DOM interaction
+  * Global state
 
 ## See also
 
