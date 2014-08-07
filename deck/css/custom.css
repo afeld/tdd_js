@@ -24,6 +24,10 @@
   line-height: 1.4;
 }
 
+.reveal pre code {
+  padding: 15px;
+}
+
 .reveal .dark-background {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;

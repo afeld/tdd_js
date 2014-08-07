@@ -128,6 +128,18 @@
               <li>Assertion</li>
             </ol>
           </section>
+
+          <section>
+            <pre><code data-trim>
+it("is described", function(){
+  var thing = setup();
+
+  thing.action();
+
+  expect(thing.property).toBe('a value');
+});
+            </code></pre>
+          </section>
         </section>
 
         <section>
