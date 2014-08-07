@@ -11,16 +11,22 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.0.0/jasmine-html.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jasmine/2.0.0/boot.js"></script>
 
-  <!-- include source files here... -->
-  <script type="text/javascript" src="src/Player.js"></script>
-  <script type="text/javascript" src="src/Song.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.7.3/sinon-min.js"></script>
 
-  <!-- include spec files here... -->
-  <script type="text/javascript" src="spec/SpecHelper.js"></script>
-  <script type="text/javascript" src="spec/PlayerSpec.js"></script>
+  <script type="text/javascript" src="tests.js"></script>
+
+  <style>
+    body {
+      background-color: inherit;
+    }
+  </style>
 
 </head>
 
 <body>
+  <div id="loading" style="display:none;">
+    Loading...
+  </div>
 </body>
 </html>
