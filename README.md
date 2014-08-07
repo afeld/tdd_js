@@ -4,7 +4,7 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 
 ## Demo
 
-To play with the demo, download/clone this repository
+To play with the demo, download/clone this repository, then follow the directions below.
 
 ### Jasmine / unit tests
 
@@ -12,7 +12,7 @@ Open [`demo/jasmine/SpecRunner.html`](demo/jasmine/SpecRunner.html) in your brow
 
 ### Selenium / integration tests
 
-The pending specs can be found in [`demo/selenium/browser_spec.rb`](demo/selenium/browser_spec.rb).  The complete version is in [`demo/selenium/complete_spec.rb`](demo/selenium/complete_spec.rb).
+The pending specs can be found in [`demo/selenium/browser_spec.rb`](demo/selenium/browser_spec.rb).  The complete version is in [`demo/selenium/complete_spec.rb`](demo/selenium/complete_spec.rb).  Requires Firefox.
 
 ```bash
 bundle install
