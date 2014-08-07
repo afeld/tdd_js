@@ -10,9 +10,9 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 
 ## See also
 
-* [Test-Driven JavaScript Development](http://www.amazon.com/Test-Driven-JavaScript-Development-Developers-Library/dp/0321683919)
-* [Superhero.js](http://superherojs.com/#testing)
 * [JavaScript test framework comparison](https://coderwall.com/p/ntbixw)
+* [Superhero.js](http://superherojs.com/#testing)
+* [Test-Driven JavaScript Development](http://www.amazon.com/Test-Driven-JavaScript-Development-Developers-Library/dp/0321683919)
 
 ## License
 
