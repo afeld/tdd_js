@@ -4,15 +4,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 
 ## Outline
 
-* Intro
-  * http://afeld.me/nerdery/1742468
-  * Complements frameworks in encouraging code to be well organized
-* Flavors of testing
-  * Unit
-    * Test a piece in isolation
-  * Integration
-    * Test a bunch of pieces together
-  * Test a piece [and everything below it] in isolation
 * Write a test framework
   * [Test to Learn](https://github.com/afeld/test_to_learn)
 * Test frameworks
@@ -32,8 +23,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
   * Breaking things into small pieces
   * Avoiding state
   * Coding from the outside in – think of testing as UI/UX design for your code
-  * Writing tests forces better code
-  * https://twitter.com/necolas/status/291978260433219584
 
 ## See also
 

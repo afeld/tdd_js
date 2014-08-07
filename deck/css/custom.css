@@ -4,6 +4,17 @@
     font-style: normal;
 }
 
+.reveal h1,
+.reveal h2 {
+  margin-bottom: 35px;
+}
+
 .reveal h1 {
   font-size: 3.25em;
+  line-height: 1;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+  line-height: 1.2;
 }
