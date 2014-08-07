@@ -4,7 +4,18 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 
 ## Demo
 
-To play with the demo, download/clone this repository and open [`demo/SpecRunner.html`](demo/SpecRunner.html) in your browser.  It will run [the incomplete tests](demo/tests.js) by default – see [`demo/complete.js`](demo/complete.js) for the final versions.
+To play with the demo, download/clone this repository
+
+### Jasmine / unit tests
+
+Open [`demo/jasmine/SpecRunner.html`](demo/jasmine/SpecRunner.html) in your browser.  It will run [the incomplete tests](demo/tests.js) by default – see [`demo/jasmine/complete.js`](demo/jasmine/complete.js) for the final versions.
+
+### Selenium / integration tests
+
+```bash
+bundle install
+rspec demo/selenium/browser_spec.rb
+```
 
 ## See also
 
