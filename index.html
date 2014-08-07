@@ -1,259 +1,259 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Test-Drive Your JavaScript</title>
-		<meta name="author" content="Aidan Feldman">
+    <title>Test-Drive Your JavaScript</title>
+    <meta name="author" content="Aidan Feldman">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="deck/css/reveal.css">
-		<link rel="stylesheet" href="deck/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="deck/css/reveal.css">
+    <link rel="stylesheet" href="deck/css/theme/simple.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="deck/lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="deck/lib/css/zenburn.css">
 
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="deck/css/custom.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="deck/css/custom.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="deck/lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="deck/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section data-background="http://image.tmdb.org/t/p/original/lAsNv2Vu0DvR8i67elmbHcXw8vU.jpg">
-					<div class="dark-background">
-						<h1>Test-Drive Your JavaScript</h1>
-						<h2>Aidan Feldman</h2>
-						<p>
-							<a href="https://github.com/afeld/tdd_js"><i class="fa fa-github"></i>/afeld/tdd_js</a>
-						</p>
-						<p>
-							<a href="https://twitter.com/aidanfeldman"><i class="fa fa-twitter"></i>aidanfeldman</a>
-						</p>
-					</div>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-background="http://image.tmdb.org/t/p/original/lAsNv2Vu0DvR8i67elmbHcXw8vU.jpg">
+          <div class="dark-background">
+            <h1>Test-Drive Your JavaScript</h1>
+            <h2>Aidan Feldman</h2>
+            <p>
+              <a href="https://github.com/afeld/tdd_js"><i class="fa fa-github"></i>/afeld/tdd_js</a>
+            </p>
+            <p>
+              <a href="https://twitter.com/aidanfeldman"><i class="fa fa-twitter"></i>aidanfeldman</a>
+            </p>
+          </div>
+        </section>
 
-				<section>
-					<h1>questions</h1>
-					<ul>
-						<li>Who has written an automated test (in any language)?</li>
-						<li>Who is a beginner in JS? Intermediate? Advanced?</li>
-						<li>Who has done JS testing?</li>
-						<li>Who has done browser-level integration testing?</li>
-					</ul>
-				</section>
+        <section>
+          <h1>questions</h1>
+          <ul>
+            <li>Who has written an automated test (in any language)?</li>
+            <li>Who is a beginner in JS? Intermediate? Advanced?</li>
+            <li>Who has done JS testing?</li>
+            <li>Who has done browser-level integration testing?</li>
+          </ul>
+        </section>
 
-				<section data-background="http://3.bp.blogspot.com/_59TdlP1XdGk/TOR66Ta34TI/AAAAAAAAOVw/TLylr7tMGys/s1600/radioflyer.jpg">
-					<div class="dark-background">
-						<h2>
-							<a href="http://afeld.github.io/test_to_learn/">afeld.github.io/test_to_learn/</a>
-						</h2>
-					</div>
-				</section>
+        <section data-background="http://3.bp.blogspot.com/_59TdlP1XdGk/TOR66Ta34TI/AAAAAAAAOVw/TLylr7tMGys/s1600/radioflyer.jpg">
+          <div class="dark-background">
+            <h2>
+              <a href="http://afeld.github.io/test_to_learn/">afeld.github.io/test_to_learn/</a>
+            </h2>
+          </div>
+        </section>
 
-				<section>
-					<h1><code>this</code></h1>
-					<ul>
-						<li>flavors of testing</li>
-						<li>test frameworks</li>
-						<li>runners</li>
-						<li>best practices</li>
-						<li>why test</li>
-					</ul>
-				</section>
+        <section>
+          <h1><code>this</code></h1>
+          <ul>
+            <li>flavors of testing</li>
+            <li>test frameworks</li>
+            <li>runners</li>
+            <li>best practices</li>
+            <li>why test</li>
+          </ul>
+        </section>
 
-				<section>
-					<blockquote cite="http://javascriptjabber.com/025-jsj-require-js-with-james-burke/">
-						JavaSc­ript is a community of amateurs, just like PHP is. This new era of actually designing code rather than just throwing things on the floor is a different paradigm.
-					</blockquote>
-					<p>
-						– <a href="https://twitter.com/coolaj86">AJ ONeal</a> on <a href="http://javascriptjabber.com/025-jsj-require-js-with-james-burke/">JavaScript Jabber</a>
-					</p>
-				</section>
+        <section>
+          <blockquote cite="http://javascriptjabber.com/025-jsj-require-js-with-james-burke/">
+            JavaSc­ript is a community of amateurs, just like PHP is. This new era of actually designing code rather than just throwing things on the floor is a different paradigm.
+          </blockquote>
+          <p>
+            – <a href="https://twitter.com/coolaj86">AJ ONeal</a> on <a href="http://javascriptjabber.com/025-jsj-require-js-with-james-burke/">JavaScript Jabber</a>
+          </p>
+        </section>
 
-				<section>
-					<section>
-						<h1>flavors of testing</h1>
-					</section>
+        <section>
+          <section>
+            <h1>flavors of testing</h1>
+          </section>
 
-					<section>
-						<h1>unit testing</h1>
-						<h2>test a piece in isolation</h2>
-					</section>
+          <section>
+            <h1>unit testing</h1>
+            <h2>test a piece in isolation</h2>
+          </section>
 
-					<section>
-						<h1>integration testing</h1>
-						<h2>test a bunch of pieces together</h2>
-					</section>
-				</section>
+          <section>
+            <h1>integration testing</h1>
+            <h2>test a bunch of pieces together</h2>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>test frameworks</h1>
-					</section>
+        <section>
+          <section>
+            <h1>test frameworks</h1>
+          </section>
 
-					<section data-background="deck/assets/frameworks.png" data-background-position="30px 30px">
-						<!-- http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript -->
-					</section>
+          <section data-background="deck/assets/frameworks.png" data-background-position="30px 30px">
+            <!-- http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript -->
+          </section>
 
-					<section>
-						<h2>anatomy of a test</h2>
-						<ol>
-							<li>Description</li>
-							<li>Setup</li>
-							<li>Action</li>
-							<li>Assertion</li>
-						</ol>
-					</section>
-				</section>
+          <section>
+            <h2>anatomy of a test</h2>
+            <ol>
+              <li>Description</li>
+              <li>Setup</li>
+              <li>Action</li>
+              <li>Assertion</li>
+            </ol>
+          </section>
+        </section>
 
-				<section>
-					<iframe src="demos/qunit.html" width="800" height="600"></iframe>
-				</section>
+        <section>
+          <iframe src="demos/qunit.html" width="800" height="600"></iframe>
+        </section>
 
-				<section>
-					<section data-background="http://dirtylooks.co.uk/wp-content/uploads/2011/10/chariots_still_wide2_720.jpg">
-						<h1>test runners</h1>
-					</section>
+        <section>
+          <section data-background="http://dirtylooks.co.uk/wp-content/uploads/2011/10/chariots_still_wide2_720.jpg">
+            <h1>test runners</h1>
+          </section>
 
-					<section>
-						<h1>browser</h1>
-					</section>
+          <section>
+            <h1>browser</h1>
+          </section>
 
-					<section>
-						<h1>headless browser</h1>
-						<ul>
-							<li>
-								<a href="http://phantomjs.org">PhantomJS</a> (WebKit)
-							</li>
-							<li>
-								<a href="http://www.slimerjs.org">SlimerJS</a> (Gecko)
-							</li>
-						</ul>
-					</section>
+          <section>
+            <h1>headless browser</h1>
+            <ul>
+              <li>
+                <a href="http://phantomjs.org">PhantomJS</a> (WebKit)
+              </li>
+              <li>
+                <a href="http://www.slimerjs.org">SlimerJS</a> (Gecko)
+              </li>
+            </ul>
+          </section>
 
-					<section data-background="http://www.thegreenhead.com/imgs/ghostbusters-slimer-bank-1.jpg" data-background-size="contain">
-					</section>
+          <section data-background="http://www.thegreenhead.com/imgs/ghostbusters-slimer-bank-1.jpg" data-background-size="contain">
+          </section>
 
-					<section>
-						<h1>node.js</h1>
-						<h2>
-							<a href="https://github.com/tmpvar/jsdom">JSDOM</a>
-						</h2>
-					</section>
-				</section>
+          <section>
+            <h1>node.js</h1>
+            <h2>
+              <a href="https://github.com/tmpvar/jsdom">JSDOM</a>
+            </h2>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>tips</h1>
-						<img src="http://24.media.tumblr.com/tumblr_m6fok1OWcW1qf14n4o1_500.gif" alt="Keep the change, you filthy animal." />
-					</section>
+        <section>
+          <section>
+            <h1>tips</h1>
+            <img src="http://24.media.tumblr.com/tumblr_m6fok1OWcW1qf14n4o1_500.gif" alt="Keep the change, you filthy animal." />
+          </section>
 
-					<section data-background="http://vegasexperience.com/wp-content/uploads/2014/06/gallagher_smash.jpg">
-						<aside class="notes">
-							break things into small pieces
-						</aside>
-					</section>
+          <section data-background="http://vegasexperience.com/wp-content/uploads/2014/06/gallagher_smash.jpg">
+            <aside class="notes">
+              break things into small pieces
+            </aside>
+          </section>
 
-					<section data-background-image="http://www.allsaintsonline.org.uk/wp-content/uploads/2014/05/Enemy-of-the-state1.jpg" data-background-size="contain" data-background-color="black">
-						<aside class="notes">
-							avoid state
-						</aside>
-					</section>
-				</section>
+          <section data-background-image="http://www.allsaintsonline.org.uk/wp-content/uploads/2014/05/Enemy-of-the-state1.jpg" data-background-size="contain" data-background-color="black">
+            <aside class="notes">
+              avoid state
+            </aside>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>why test</h1>
-					</section>
+        <section>
+          <section>
+            <h1>why test</h1>
+          </section>
 
-					<section>
-						<h1>insurance</h1>
-						<p>...against yourself</p>
-					</section>
+          <section>
+            <h1>insurance</h1>
+            <p>...against yourself</p>
+          </section>
 
-					<section>
-						<h1>testable code</h1>
-						<h2>is better code</h2>
-					</section>
+          <section>
+            <h1>testable code</h1>
+            <h2>is better code</h2>
+          </section>
 
-					<section>
-						<h1>UX design for your code</h1>
-						<h2>coding from the outside in</h2>
-					</section>
+          <section>
+            <h1>UX design for your code</h1>
+            <h2>coding from the outside in</h2>
+          </section>
 
-					<section data-background="http://viewerscommentary.files.wordpress.com/2011/11/braveheart-mel-gibson.jpg">
-					</section>
-				</section>
+          <section data-background="http://viewerscommentary.files.wordpress.com/2011/11/braveheart-mel-gibson.jpg">
+          </section>
+        </section>
 
-				<section>
-					<h1>Thanks!</h1>
-					<p>
-						<a href="https://github.com/afeld/tdd_js"><i class="fa fa-github"></i>/afeld/tdd_js</a>
-					</p>
-					<p>
-						<a href="https://twitter.com/aidanfeldman"><i class="fa fa-twitter"></i>aidanfeldman</a>
-					</p>
-				</section>
-			</div>
+        <section>
+          <h1>Thanks!</h1>
+          <p>
+            <a href="https://github.com/afeld/tdd_js"><i class="fa fa-github"></i>/afeld/tdd_js</a>
+          </p>
+          <p>
+            <a href="https://twitter.com/aidanfeldman"><i class="fa fa-twitter"></i>aidanfeldman</a>
+          </p>
+        </section>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="deck/lib/js/head.min.js"></script>
-		<script src="deck/js/reveal.min.js"></script>
+    <script src="deck/lib/js/head.min.js"></script>
+    <script src="deck/js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'deck/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'deck/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'deck/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'deck/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'deck/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'deck/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'deck/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'deck/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'deck/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'deck/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
