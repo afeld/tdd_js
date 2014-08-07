@@ -5,10 +5,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 ## Outline
 
 * Basics of testing
-  * Structure
-    1. Setup
-    1. Action
-    1. Assertion
   * Write a test framework
 * Demos
   * Stubbing/mocking
