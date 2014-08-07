@@ -6,13 +6,26 @@ describe "integration tests", type: :feature, js: true do
     expect(page).to have_content('todos')
   end
 
-  it "saves the state of the page" do
-    visit('/index.html')
-    expect(page).to have_selector('#new-todo')
-    fill_in('new-todo', with: "Pick up kitty litter")
-    find('#new-todo').native.send_keys(:return)
 
-    visit('/index.html')
-    expect(page).to have_content("Pick up kitty litter")
-  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  it "saves the state of the page"
 end
