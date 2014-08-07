@@ -5,10 +5,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 ## Outline
 
 * Write a test framework
-  * [Test to Learn](https://github.com/afeld/test_to_learn)
-* Test frameworks
-  * Basically all the same
-  * [JavaScript test framework comparison](https://coderwall.com/p/ntbixw)
 * Stubbing/mocking
   * [Sinon.JS](http://sinonjs.org)
 * Runners
@@ -19,15 +15,14 @@ To most people building websites, writing JavaScript means copying-and-pasting a
   * Node.js
     * [JSDOM](https://github.com/tmpvar/jsdom)
 * Best practices
-  * Writing code to be testable
   * Breaking things into small pieces
   * Avoiding state
-  * Coding from the outside in – think of testing as UI/UX design for your code
 
 ## See also
 
 * [Test-Driven JavaScript Development](http://www.amazon.com/Test-Driven-JavaScript-Development-Developers-Library/dp/0321683919)
 * [Superhero.js](http://superherojs.com/#testing)
+* [JavaScript test framework comparison](https://coderwall.com/p/ntbixw)
 
 ## License
 
