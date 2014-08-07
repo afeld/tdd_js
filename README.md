@@ -35,6 +35,11 @@ To most people building websites, writing JavaScript means copying-and-pasting a
   * Writing tests forces better code
   * https://twitter.com/necolas/status/291978260433219584
 
+## See also
+
+* [Test-Driven JavaScript Development](http://www.amazon.com/Test-Driven-JavaScript-Development-Developers-Library/dp/0321683919)
+* [Superhero.js](http://superherojs.com/#testing)
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Test-Drive Your JavaScript</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Aidan Feldman</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
