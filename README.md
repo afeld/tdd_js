@@ -7,13 +7,6 @@ To most people building websites, writing JavaScript means copying-and-pasting a
 * Write a test framework
 * Stubbing/mocking
   * [Sinon.JS](http://sinonjs.org)
-* Runners
-  * Browser
-  * headless browser
-    * [PhantomJS](http://phantomjs.org) (WebKit)
-    * [SlimerJS](http://www.slimerjs.org) (Gecko)
-  * Node.js
-    * [JSDOM](https://github.com/tmpvar/jsdom)
 * Best practices
   * Breaking things into small pieces
   * Avoiding state
