@@ -33,3 +33,4 @@ To most people building websites, writing JavaScript means copying-and-pasting a
   * Avoiding state
   * Coding from the outside in – think of testing as UI/UX design for your code
   * Writing tests forces better code
+  * https://twitter.com/necolas/status/291978260433219584
