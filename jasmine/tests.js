@@ -75,14 +75,14 @@ xdescribe('LoadingMessage', function(){
   describe('.hide()', function(){
     it("makes the element invisible", function(){
       message.hide();
-      expect($('#loading:visible').length).toBe(0);
+      expect(message.$el.is(':visible')).toBe(false);
     });
   });
 
   describe('.show()', function(){
     xit("makes the element visible", function(){
       message.show();
-      expect($('#loading:visible').length).toBe(1);
+      expect(message.$el.is(':visible')).toBe(true);
     });
   });
 })
