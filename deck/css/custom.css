@@ -18,3 +18,9 @@
   font-size: 1.8em;
   line-height: 1.2;
 }
+
+.reveal .dark-background {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 15px;
+}
