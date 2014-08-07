@@ -61,12 +61,17 @@ var LoadingMessage = function(){
 };
 
 LoadingMessage.prototype.show = function(){
-  this.$el.show();
+  this.$el.addClass('active');
 };
 
 LoadingMessage.prototype.hide = function(){
-  this.$el.hide();
+  this.$el.removeClass('active');
 };
+
+LoadingMessage.prototype.isVisible = function(){
+  return this.$el.hasClass('active');
+};
+
 
 var message = new LoadingMessage();
 
@@ -75,14 +80,14 @@ xdescribe('LoadingMessage', function(){
   describe('.hide()', function(){
     it("makes the element invisible", function(){
       message.hide();
-      expect(message.$el.is(':visible')).toBe(false);
+      expect(message.isVisible()).toBe(false);
     });
   });
 
   describe('.show()', function(){
-    xit("makes the element visible", function(){
+    it("makes the element visible", function(){
       message.show();
-      expect(message.$el.is(':visible')).toBe(true);
+      expect(message.isVisible()).toBe(true);
     });
   });
 })

@@ -76,19 +76,18 @@ describe('getDayName()', function(){
 
 var LoadingMessage = function(){
   this.$el = $('<div>Now loading...</div>');
-  $('body').append(this.$el);
 };
 
 LoadingMessage.prototype.show = function(){
-  this.$el.show();
+  this.$el.addClass('active');
 };
 
 LoadingMessage.prototype.hide = function(){
-  this.$el.hide();
+  this.$el.removeClass('active');
 };
 
-LoadingMessage.prototype.remove = function(){
-  this.$el.remove();
+LoadingMessage.prototype.isVisible = function(){
+  return this.$el.hasClass('active');
 };
 
 
@@ -99,21 +98,17 @@ describe('LoadingMessage', function(){
     message = new LoadingMessage();
   });
 
-  afterEach(function(){
-    message.remove();
-  });
-
   describe('.hide()', function(){
     it("makes the element invisible", function(){
       message.hide();
-      expect(message.$el.is(':visible')).toBe(false);
+      expect(message.isVisible()).toBe(false);
     });
   });
 
   describe('.show()', function(){
     it("makes the element visible", function(){
       message.show();
-      expect(message.$el.is(':visible')).toBe(true);
+      expect(message.isVisible()).toBe(true);
     });
   });
 })

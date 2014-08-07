@@ -21,12 +21,20 @@
     body {
       background-color: inherit;
     }
+
+    #loading {
+      /* hide by default */
+      display: none;
+    }
+    #loading.active {
+      display: block;
+    }
   </style>
 
 </head>
 
 <body>
-  <div id="loading" style="display:none;">
+  <div id="loading">
     Loading...
   </div>
 </body>
